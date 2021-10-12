@@ -18,53 +18,18 @@ public class BizException extends RuntimeException {
      */
     protected String errorMsg;
 
-    public BizException() {
-        super();
-    }
-
     public BizException(CommonEnum commonEnum) {
         super(String.valueOf(commonEnum.getResultCode()));
         this.errorCode = commonEnum.getResultCode();
         this.errorMsg = commonEnum.getResultMsg();
     }
 
-    public BizException(CommonEnum commonEnum, Throwable cause) {
-        super(String.valueOf(commonEnum.getResultCode()), cause);
-        this.errorCode = commonEnum.getResultCode();
-        this.errorMsg = commonEnum.getResultMsg();
-    }
-
-    public BizException(String errorMsg) {
-        super(errorMsg);
-        this.errorMsg = errorMsg;
-    }
-
-    public BizException(int errorCode, String errorMsg) {
-        super(String.valueOf(errorCode));
-        this.errorCode = errorCode;
-        this.errorMsg = errorMsg;
-    }
-
-    public BizException(int errorCode, String errorMsg, Throwable cause) {
-        super(String.valueOf(errorCode), cause);
-        this.errorCode = errorCode;
-        this.errorMsg = errorMsg;
-    }
-
     public int getErrorCode() {
         return errorCode;
     }
 
-    public void setErrorCode(int errorCode) {
-        this.errorCode = errorCode;
-    }
-
     public String getErrorMsg() {
         return errorMsg;
-    }
-
-    public void setErrorMsg(String errorMsg) {
-        this.errorMsg = errorMsg;
     }
 
     public String getMessage() {
