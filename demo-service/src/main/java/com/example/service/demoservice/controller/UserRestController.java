@@ -1,6 +1,6 @@
 package com.example.service.demoservice.controller;
 
-import com.example.service.demoservice.enums.CommonEnum;
+import com.example.service.demoservice.enums.BizExceptionEnum;
 import com.example.service.demoservice.exception.BizException;
 import com.example.service.demoservice.pojo.User;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +16,7 @@ public class UserRestController {
     public boolean insert(@RequestBody User user) {
         //如果姓名为空就手动抛出一个自定义的异常！
         if (user.getName() == null) {
-            throw new BizException(CommonEnum.USER_NAME_IS_NULL);
+            throw new BizException(BizExceptionEnum.USER_NAME_IS_NULL);
         }
         return true;
     }

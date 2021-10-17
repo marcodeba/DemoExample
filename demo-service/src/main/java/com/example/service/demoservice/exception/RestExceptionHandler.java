@@ -1,7 +1,7 @@
 package com.example.service.demoservice.exception;
 
 import com.example.service.demoservice.base.ResultData;
-import com.example.service.demoservice.enums.CommonEnum;
+import com.example.service.demoservice.enums.BizExceptionEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -45,7 +45,7 @@ public class RestExceptionHandler {
     @ExceptionHandler(Exception.class)
     public ResultData<String> exceptionHandler(HttpServletRequest req, Exception e) {
         log.error("全局异常信息 ex={}", e.getMessage(), e);
-        return ResultData.error(CommonEnum.INTERNAL_SERVER_ERROR);
+        return ResultData.error(BizExceptionEnum.INTERNAL_SERVER_ERROR);
     }
 
     /**
@@ -58,13 +58,13 @@ public class RestExceptionHandler {
     @ExceptionHandler(value = NullPointerException.class)
     public ResultData nullPointerExceptionHandler(HttpServletRequest req, NullPointerException e) {
         log.error("发生空指针异常！原因是:", e);
-        return ResultData.error(CommonEnum.BODY_NOT_MATCH);
+        return ResultData.error(BizExceptionEnum.BODY_NOT_MATCH);
     }
 
     @ExceptionHandler(ArithmeticException.class)
     public ResultData<String> arithmeticExceptionHandler(ArithmeticException e) {
         log.error("ArithmeticException ex={}", e.getMessage(), e);
-        return ResultData.error(CommonEnum.DIVIDE_BY_ZERO);
+        return ResultData.error(BizExceptionEnum.DIVIDE_BY_ZERO);
     }
 
     @ExceptionHandler(value = {BindException.class, ValidationException.class, MethodArgumentNotValidException.class})

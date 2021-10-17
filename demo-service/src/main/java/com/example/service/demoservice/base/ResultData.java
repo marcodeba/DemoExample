@@ -1,6 +1,6 @@
 package com.example.service.demoservice.base;
 
-import com.example.service.demoservice.enums.CommonEnum;
+import com.example.service.demoservice.enums.BizExceptionEnum;
 import lombok.Data;
 
 @Data
@@ -28,16 +28,16 @@ public class ResultData<T> {
 
     public static <T> ResultData<T> success(T data) {
         ResultData<T> resultData = new ResultData<>();
-        resultData.setStatus(CommonEnum.SUCCESS.getResultCode());
-        resultData.setMessage(CommonEnum.SUCCESS.getResultMsg());
+        resultData.setStatus(BizExceptionEnum.SUCCESS.getResultCode());
+        resultData.setMessage(BizExceptionEnum.SUCCESS.getResultMsg());
         resultData.setData(data);
         return resultData;
     }
 
-    public static <T> ResultData<T> error(CommonEnum commonEnum) {
+    public static <T> ResultData<T> error(BizExceptionEnum bizExceptionEnum) {
         ResultData<T> resultData = new ResultData<>();
-        resultData.setStatus(commonEnum.getResultCode());
-        resultData.setMessage(commonEnum.getResultMsg());
+        resultData.setStatus(bizExceptionEnum.getResultCode());
+        resultData.setMessage(bizExceptionEnum.getResultMsg());
         return resultData;
     }
 

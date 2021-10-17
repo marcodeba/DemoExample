@@ -1,7 +1,6 @@
 package com.example.service.demoservice.exception;
 
-
-import com.example.service.demoservice.enums.CommonEnum;
+import com.example.service.demoservice.enums.BizExceptionEnum;
 
 /**
  * @author：marco.pan
@@ -19,10 +18,10 @@ public class BizException extends RuntimeException {
      */
     protected String errorMsg;
 
-    public BizException(CommonEnum commonEnum) {
-        super(String.valueOf(commonEnum.getResultCode()));
-        this.errorCode = commonEnum.getResultCode();
-        this.errorMsg = commonEnum.getResultMsg();
+    public BizException(BizExceptionEnum bizExceptionEnum) {
+        super(String.valueOf(bizExceptionEnum.getResultCode()));
+        this.errorCode = bizExceptionEnum.getResultCode();
+        this.errorMsg = bizExceptionEnum.getResultMsg();
     }
 
     public int getErrorCode() {

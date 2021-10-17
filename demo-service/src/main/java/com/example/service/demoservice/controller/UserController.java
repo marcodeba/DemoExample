@@ -24,8 +24,8 @@ public class UserController {
         return users;
     }
 
-    @RequestMapping("/getUser")
-    public DBUser getUser(Long id) {
+    @RequestMapping("/getUser/{id}")
+    public DBUser getUser(@PathVariable("id") Long id) {
         DBUser user = userMapper.getOne(id);
         return user;
     }
