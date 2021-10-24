@@ -9,8 +9,7 @@ public enum BizExceptionEnum {
     INTERNAL_SERVER_ERROR(500, "服务器内部错误!"),
     SERVER_BUSY(503, "服务器正忙，请稍后再试!"),
     USER_NAME_IS_NULL(504, "user name is null"),
-    DIVIDE_BY_ZERO(505, "Devide by Zero")
-    ;
+    DIVIDE_BY_ZERO(505, "Devide by Zero");
 
     /**
      * 错误码

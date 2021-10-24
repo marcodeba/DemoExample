@@ -3,9 +3,9 @@
 <mapper namespace="com.example.service.demoservice.mapper.UserMapper">
     <insert id="batchSave">
         INSERT INTO user (userName, passWord) VALUES
-        <foreach collection ="userList" item="user" separator =",">
+        <foreach collection="userList" item="user" separator=",">
             (#{user.userName}, #{user.passWord})
-        </foreach >
+        </foreach>
     </insert>
 
 </mapper>

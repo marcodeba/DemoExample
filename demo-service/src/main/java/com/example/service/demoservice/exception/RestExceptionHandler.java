@@ -39,7 +39,7 @@ public class RestExceptionHandler {
      * 默认全局异常处理。
      *
      * @param req
-     * @param e the e
+     * @param e   the e
      * @return ResultData
      */
     @ExceptionHandler(Exception.class)

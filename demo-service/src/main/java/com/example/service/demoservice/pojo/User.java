@@ -43,7 +43,6 @@ public class User {
 
     /**
      * 设置姓名
-     *
      */
     public void setName(String name) {
         this.name = name;
@@ -60,7 +59,6 @@ public class User {
 
     /**
      * 设置年龄
-     *
      */
     public void setAge(Integer age) {
         this.age = age;
