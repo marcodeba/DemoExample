@@ -1,6 +1,6 @@
 package com.example.service.demoservice;
 
-import com.example.demo.demoapi.ArticleService;
+import com.example.demo.demoapi.service.ArticleService;
 import com.example.service.demoservice.mapper.UserMapper;
 import com.example.service.demoservice.pojo.DBUser;
 import com.example.service.demoservice.task.AsyncTask;

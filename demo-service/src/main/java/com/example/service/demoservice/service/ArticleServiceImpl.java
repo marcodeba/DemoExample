@@ -1,6 +1,6 @@
 package com.example.service.demoservice.service;
 
-import com.example.demo.demoapi.ArticleService;
+import com.example.demo.demoapi.service.ArticleService;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
