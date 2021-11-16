@@ -3,7 +3,6 @@ package com.example.service.demoservice.controller;
 import com.example.service.demoservice.enums.BizExceptionEnum;
 import com.example.service.demoservice.exception.BizException;
 import com.example.service.demoservice.pojo.User;
-import com.mysql.cj.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;

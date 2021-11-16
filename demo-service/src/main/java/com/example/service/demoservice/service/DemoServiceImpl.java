@@ -1,7 +1,7 @@
 package com.example.service.demoservice.service;
 
+import com.example.demo.demoapi.dto.Animal;
 import com.example.demo.demoapi.service.DemoService;
-import com.example.demo.demoapi.service.dto.Animal;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

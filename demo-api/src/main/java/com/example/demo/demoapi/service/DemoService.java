@@ -1,6 +1,6 @@
 package com.example.demo.demoapi.service;
 
-import com.example.demo.demoapi.service.dto.Animal;
+import com.example.demo.demoapi.dto.Animal;
 
 public interface DemoService {
     void testDemo();
