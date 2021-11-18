@@ -2,7 +2,7 @@ package com.example.service.demoservice;
 
 import com.example.demo.demoapi.service.ArticleService;
 import com.example.service.demoservice.mapper.UserMapper;
-import com.example.service.demoservice.pojo.DBUser;
+import com.example.service.demoservice.model.DBUser;
 import com.example.service.demoservice.task.AsyncTask;
 import com.example.service.demoservice.task.SyncTask;
 import org.junit.jupiter.api.Test;

@@ -1,7 +1,7 @@
 package com.example.service.demoservice.mapper;
 
 import com.example.service.demoservice.enums.UserSexEnum;
-import com.example.service.demoservice.pojo.DBUser;
+import com.example.service.demoservice.model.DBUser;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Service;
 

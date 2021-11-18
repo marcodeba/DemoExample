@@ -1,4 +1,4 @@
-package com.example.service.demoservice.pojo;
+package com.example.service.demoservice.model;
 
 import com.example.service.demoservice.enums.UserSexEnum;
 import lombok.Data;

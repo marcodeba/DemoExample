@@ -1,7 +1,7 @@
 package com.example.service.demoservice.controller;
 
 import com.example.service.demoservice.mapper.UserMapper;
-import com.example.service.demoservice.pojo.DBUser;
+import com.example.service.demoservice.model.DBUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
